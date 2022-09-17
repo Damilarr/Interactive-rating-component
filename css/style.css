@@ -1,0 +1,61 @@
+*{
+  /* font: [Overpass](https://fonts.google.com/specimen/Overpass); */
+}
+p{
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+.bdy {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsl(216, 12%, 8%) !important;
+  max-width: 100%;
+}
+.rating-card {
+  position: absolute;
+  width: 100%;
+  background-color: hsl(213, 19%, 18%);
+  max-width: 490px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.circle, .rate-button{
+  height: 60px;
+  width: 60px;
+  color: hsl(217, 12%, 63%);
+  border-radius: 50%;
+  background: hsl(212, 16%, 23%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  outline: none;
+}
+.rate-button:hover{
+  background-color:  hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.submit{
+  background-color:hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.submit:hover{
+  background-color: hsl(0, 0%, 100%);
+  color:hsl(25, 97%, 53%);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
