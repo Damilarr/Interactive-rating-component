@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution url](https://github.com/Damilarr/Interactive-rating-component)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://damilarr.github.io/Interactive-rating-component/)
 
 ## My process
 
