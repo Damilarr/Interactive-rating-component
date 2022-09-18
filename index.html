@@ -13,56 +13,41 @@
     />
 
     <title>Frontend Mentor | Interactive rating component</title>
-    <link rel="stylesheet" href="../../html/Bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../html/Bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css">
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="bdy d-flex justify-content-center align-items-center">
-      <div class="rating-card px-5 py-5">
+    <div class="bdy d-flex justify-content-center align-items-center flex-column" >
+      <div class="rating-card  py-5" id="firstCard">
         <div class="d-flex justify-content-center align-items-center circle mb-3"><img src="./images/icon-star.svg" height="20px" alt=""></div>
         <h1 class="text-white mb-3">How did we do?</h1>
         <p class="mb-3"> Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!</p>
         <div class="justify-content-between align-items-center d-flex py-3">
-          <button class="border-0 rate-button">1</button>
-          <button class="border-0 rate-button">2</button>
-          <button class="border-0 rate-button">3</button>
-          <button class="border-0 rate-button">4</button>
-          <button class="border-0 rate-button">5</button>
+          <button class="border-0 rate-button" id="btnn1" onclick="assign('1')">1</button>
+          <button class="border-0 rate-button" id="btnn2" onclick="assign('2')">2</button>
+          <button class="border-0 rate-button" id="btnn3" onclick="assign('3')">3</button>
+          <button class="border-0 rate-button" id="btnn4" onclick="assign('4')">4</button>
+          <button class="border-0 rate-button" id="btnn5" onclick="assign('5')">5</button>
         </div>  
-        <button class="w-100 mt-3 rounded-pill py-2 border-0 submit">SUBMIT</button>
+        <button class="w-100 mt-3 rounded-pill py-2 border-0 submit" onclick="submitt()">SUBMIT</button>
+      </div>
+      <!-- Thank you card -->
+      <div class="rating-card hidden-card py-5" id="secondCard">
+        <div class="d-flex justify-content-center align-items-center mb-3"><img src="./images/illustration-thank-you.svg" class="result" alt=""></div>
+        <div class=" d-flex justify-content-center"><p class="rateText rounded-pill text-center py-1 " id="rateText"></p></div>
+        <h1 class="text-white mb-3 text-center">Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If
+        you ever need more support, don't hesitate to get in touch!</p>
+      </div>
+      <div class="attribution text-light">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">EMMANUEL</a>.
       </div>
     </div>
-
-    1 2 3 4 5 Submit
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! Thank you state
-    end
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
   </body>
+  <script src="./js/script.js"></script>
 </html>

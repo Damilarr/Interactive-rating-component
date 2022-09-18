@@ -5,17 +5,18 @@ p{
   color: hsl(217, 12%, 63%);
   font-size: 15px;
 }
+.hidden-card{display: none;}
 .bdy {
   position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: hsl(216, 12%, 8%) !important;
+  background: hsl(216, 12%, 8%);
   max-width: 100%;
 }
 .rating-card {
-  position: absolute;
+  padding: 4%;
   width: 100%;
   background-color: hsl(213, 19%, 18%);
   max-width: 490px;
@@ -46,9 +47,19 @@ p{
   -ms-transition: 1s;
   -o-transition: 1s;
 }
+.clicked-button{
+  background-color: hsl(217, 12%, 63%);
+  color: black;
+}
 .submit{
   background-color:hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
+}
+.rateText{
+  color:hsl(25, 91%, 56%);
+  background: hsl(212, 16%, 23%);
+  width: fit-content;
+  padding: 10px 10px 0;
 }
 .submit:hover{
   background-color: hsl(0, 0%, 100%);
@@ -58,4 +69,24 @@ p{
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width:600px) {
+.bdy{
+  padding: 0 6% 0;
+}
+h1{
+  font-size: 35px;
+}
+.circle,.rate-button{
+  height: 45px;
+  width: 45px;
+}
+.rating-card{ border-radius:20px ; -webkit-border-radius:20px ; -moz-border-radius:20px ; -ms-border-radius:20px ; -o-border-radius:20px ; }
 }
